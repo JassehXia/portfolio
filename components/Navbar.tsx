@@ -19,7 +19,7 @@ export default function Navbar() {
                 {/* Logo */}
                 <Link
                     href="/"
-                    className="text-2xl font-bold text-gray-900 dark:text-white no-underlinet"
+                    className="text-2xl font-bold text-gray-900 dark:text-white no-underline"
                 >
                     Portfolio
                 </Link>
