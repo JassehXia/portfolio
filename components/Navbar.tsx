@@ -29,7 +29,7 @@ export default function Navbar() {
                     {navLinks.map((link) => {
                         const isActive = pathname === link.href;
                         return (
-                            <li key={link.href}>
+                            <li key={link.label}>
                                 <Link
                                     href={link.href}
                                     className={`px-3 py-1 rounded transition-colors no-underline text-lg ${isActive
