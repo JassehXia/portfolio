@@ -14,14 +14,14 @@ export default function Navbar() {
     const pathname = usePathname();
 
     return (
-        <header className="bg-gray-100 dark:bg-gray-900 shadow-md fixed w-full z-50">
+        <header className="bg-black dark:gt-black shadow-md fixed w-full z-50">
             <nav className="max-w-6xl mx-auto flex justify-between items-center py-4 px-0">
                 {/* Logo */}
                 <Link
                     href="/"
                     className="text-2xl font-bold text-gray-900 dark:text-white no-underline"
                 >
-                    Portfolio
+
                 </Link>
 
                 {/* Links */}
@@ -33,8 +33,8 @@ export default function Navbar() {
                                 <Link
                                     href={link.href}
                                     className={`px-3 py-1 rounded transition-colors no-underline text-lg ${isActive
-                                        ? "bg-blue-500 text-white"
-                                        : "text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                                        ? "bg-emerald-600 text-white"
+                                        : "text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:bg-emerald-600"
                                         }`}
                                 >
                                     {link.label}
