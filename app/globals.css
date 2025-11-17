@@ -85,3 +85,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* For Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  /* thumb color */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  /* track color */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
