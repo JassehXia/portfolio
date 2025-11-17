@@ -1,5 +1,5 @@
 // components/Hero.tsx
-
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -17,18 +17,22 @@ export default function Hero() {
                 </p>
 
                 <div className="mt-10 flex gap-4">
-                    <Button size="lg" className="bg-emerald-500 hover:bg-emerald-600">
-                        View Projects
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
+                    <Link href="/projects">
+                        <Button size="lg" className="bg-emerald-500 hover:bg-emerald-600">
+                            View Projects
+                            <ArrowRight className="ml-2 h-4 w-4" />
+                        </Button>
+                    </Link>
+                    <Link href="/contact">
+                        <Button
+                            size="lg"
+                            variant="outline"
+                            className="text-white border-neutral-700 hover:bg-neutral-800"
 
-                    <Button
-                        size="lg"
-                        variant="outline"
-                        className="text-white border-neutral-700 hover:bg-neutral-800"
-                    >
-                        Contact Me
-                    </Button>
+                        >
+                            Contact Me
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </section>
